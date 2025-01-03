@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .saleko_logo_with_text {
+        width: 230px;
+        height: 100px;
+        background-image: url("../images/saleko_logo_with_text.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+
+      .main_body_image {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        margin-top: 20px;
+      }
+
+      .normal_text {
+        color: #4b4b4b;
+        font-size: 15px;
+      }
+
+      .flex_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer_flex_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer_flex_second_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .saleko_logo {
+        width: 200px;
+        height: 70px;
+        background-image: url("../images/saleko_logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .icon_container {
+        width: 50px;
+        height: 50px;
+        background-color: #084c3f1a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+      }
+
+      .instagram_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/instagram_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .facebook_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/facebook_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .twitter_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/twitter_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .footer_flex_second_container > a {
+        color: #4b4b4b;
+        font-size: 15px;
+      }
+
+      .spacing_style {
+        margin-top: -15px;
+      }
+
+      .otp-container {
+        display: flex;
+        gap: 10px;
+        /* justify-content: center; */
+        margin-top: 40px;
+      }
+
+      .otp-box {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #084c3f;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+      }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .main_body_image {
+          width: 100%;
+          height: 150px;
+          object-fit: contain;
+        }
+
+        .saleko_logo {
+          width: 100px;
+          height: 30px;
+        }
+
+        .icon_container {
+          width: 35px;
+          height: 35px;
+        }
+
+        .instagram_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .facebook_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .twitter_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .footer_flex_container > p {
+          font-size: 12px;
+        }
+
+        .footer_flex_second_container > a {
+          font-size: 12px;
+        }
+
+        .spacing_style {
+          margin-top: -6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 600px; margin: 0 auto; padding: 15px 10px 0 10px">
+      <table style="width: 100%">
+        <!-- The Header -->
+        <tr>
+          <td>
+            <div class="header_container">
+              <div class="saleko_logo_with_text"></div>
+              <hr
+                style="border: 2px solid #084c3f; width: 60px; margin-top: 20px"
+              />
+
+              <img src="../images/temp_image_3.png" class="main_body_image" />
+            </div>
+          </td>
+        </tr>
+
+        <!-- Text Body -->
+        <tr>
+          <td>
+            <div>
+              <p class="normal_text" style="margin-top: 10px;">
+                Thank you for choosing Saleko. Kindly use this OTP
+                <span style="font-weight: 900" id="otp_digit"></span> to continue the
+                process
+              </p>
+
+              <div class="otp-container" id="otpContainer"></div>
+            </div>
+
+            <hr style="margin-top: 60px" />
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding-top: 20px">
+            <div class="footer_flex_container">
+              <div class="saleko_logo"></div>
+
+              <div class="footer_flex_second_container">
+                <a href="" class="icon_container">
+                  <div class="instagram_ic"></div>
+                </a>
+                <a href="" class="icon_container">
+                  <div class="facebook_ic"></div>
+                </a>
+                <a href="" class="icon_container">
+                  <div class="twitter_ic"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer_flex_container spacing_style">
+              <p class="normal_text" style="color: #9a9ea6 !important">
+                © 2023 All Rights Reserved
+              </p>
+
+              <div class="footer_flex_second_container">
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >Privacy Policy</a
+                >
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >FAQs</a
+                >
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >Become a seller</a
+                >
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+  <script>
+    const saleko_otp = "32902";
+    document.getElementById('otp_digit').innerHTML = saleko_otp;
+
+    const otpContainer = document.getElementById("otpContainer");
+
+    // Loop through each character in the OTP
+    for (const digit of saleko_otp) {
+      // Create a box for each digit
+      const otpBox = document.createElement("div");
+      otpBox.classList.add("otp-box");
+      otpBox.textContent = digit;
+
+      // Append the box to the container
+      otpContainer.appendChild(otpBox);
+    }
+  </script>
+</html>

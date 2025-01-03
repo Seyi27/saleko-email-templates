@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .saleko_logo_with_text {
+        width: 230px;
+        height: 100px;
+        background-image: url("../images/saleko_logo_with_text.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+
+      .header_container {
+        width: 450px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .welcome_text {
+        color: #084c3f;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 40px;
+      }
+
+      .normal_text {
+        color: #4b4b4b;
+        font-size: 15px;
+      }
+
+      .main_body_image {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        margin-top: 10px;
+      }
+
+      .text_link {
+        color: #084c3f;
+        font-weight: 700;
+      }
+
+      span {
+        color: #084c3f;
+        font-weight: 700;
+      }
+
+      .location_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/location_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .location_line_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/location_line_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 12px;
+      }
+
+      .delivery_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/delivery_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .green_button {
+        background-color: #084c3f;
+        padding: 10px;
+        color: white;
+        border: 0;
+        font-size: 10px;
+      }
+
+      .flex_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer_flex_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer_flex_second_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .saleko_logo {
+        width: 200px;
+        height: 70px;
+        background-image: url("../images/saleko_logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .icon_container {
+        width: 50px;
+        height: 50px;
+        background-color: #084c3f1a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+      }
+
+      .instagram_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/instagram_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .facebook_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/facebook_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .twitter_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/twitter_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .footer_flex_second_container > a {
+        color: #4b4b4b;
+        font-size: 15px;
+      }
+
+      .spacing_style {
+        margin-top: -15px;
+      }
+
+      .product_table th {
+        border-bottom: 1px solid #d1d1d1;
+      }
+
+      #product_rows td {
+        padding-top: 15px;
+        padding-bottom: 12px;
+        border-collapse: collapse;
+        border-bottom: 1px solid #d1d1d1;
+      }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .header_container {
+          width: 330px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .main_body_image {
+          width: 100%;
+          height: 150px;
+          object-fit: contain;
+        }
+
+        .saleko_logo {
+          width: 100px;
+          height: 30px;
+        }
+
+        .location_line_ic {
+          margin-left: 9px;
+        }
+
+        .icon_container {
+          width: 35px;
+          height: 35px;
+        }
+
+        .instagram_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .facebook_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .twitter_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .footer_flex_container > p {
+          font-size: 12px;
+        }
+
+        .footer_flex_second_container > a {
+          font-size: 12px;
+        }
+
+        .spacing_style {
+          margin-top: -6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 600px; margin: 0 auto; padding: 15px 10px 0 10px">
+      <table style="width: 100%">
+        <!-- The Header -->
+        <tr>
+          <td>
+            <div class="header_container">
+              <div class="saleko_logo_with_text"></div>
+              <hr
+                style="border: 2px solid #084c3f; width: 60px; margin-top: 20px"
+              />
+
+              <p class="welcome_text">
+                Your Order is on Its Way! (Order SALNNNCC)
+              </p>
+              <p class="normal_text">Hello Mimi’s Store,</p>
+              <p class="normal_text">
+                We’re excited to let you know that your Saleko order is on its
+                way to you! Your purchase is now in transit and should be
+                arriving at your doorstep soon.
+              </p>
+            </div>
+            
+            <img src="../images/temp_image_3.png" class="main_body_image" />
+          </td>
+        </tr>
+
+        <!-- Text Body -->
+        <!-- Location -->
+        <tr>
+          <td>
+            <div>
+              <p style="text-align: center; font-size: 15px">
+                2 stores, 3 items
+              </p>
+
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
+                  <div style="display: flex; align-items: center; gap: 10px">
+                    <div class="location_ic"></div>
+
+                    <p class="normal_text">
+                      From:
+                      <a href="" class="normal_text"
+                        >Pickup Hub 1 (32 Lewis Street, Lagos Island,
+                        Nigeria.)</a
+                      >
+                    </p>
+                  </div>
+
+                  <button class="green_button">TRACK ORDER</button>
+                </div>
+
+                <div class="location_line_ic"></div>
+
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="delivery_ic"></div>
+
+                  <p class="normal_text">
+                    To:
+                    <a href="" class="normal_text">
+                      27, Cole Street, Fadeyi Lagos, Nigeria.</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Product Table -->
+        <tr>
+          <td style="padding: 35px 10px 35px 10px">
+            <table style="width: 100%" class="product_table">
+              <tr>
+                <th style="width: 400px; text-align: left">PRODUCT INFO</th>
+                <th style="text-align: center">UNIT</th>
+                <th style="text-align: right">PRICE</th>
+              </tr>
+              <tbody id="product_rows"></tbody>
+            </table>
+
+            <div class="flex_container" style="padding-top: 30px">
+              <p
+                style="
+                  font-size: 18px;
+                  color: #4f4f4f;
+                  font-weight: 400;
+                  margin: 0;
+                "
+              >
+                Subtotal
+              </p>
+              <p style="font-weight: 600; margin: 0">N33,000</p>
+            </div>
+
+            <div class="flex_container" style="padding-top: 15px">
+              <p
+                style="
+                  font-size: 18px;
+                  color: #4f4f4f;
+                  font-weight: 400;
+                  margin: 0;
+                "
+              >
+                Service Fee
+              </p>
+              <p style="font-weight: 600; margin: 0">N33,000</p>
+            </div>
+
+            <div class="flex_container" style="padding-top: 15px">
+              <p
+                style="
+                  font-size: 18px;
+                  color: #4f4f4f;
+                  font-weight: 400;
+                  margin: 0;
+                "
+              >
+                Delivery Fee
+              </p>
+              <p style="font-weight: 600; margin: 0">N33,000</p>
+            </div>
+
+            <hr style="margin-top: 15px" />
+
+            <div class="flex_container" style="padding-top: 10px">
+              <p style="font-size: 22px; font-weight: 400; margin: 0">Total</p>
+              <p style="font-size: 20px; font-weight: 600; margin: 0">
+                N33,000
+              </p>
+            </div>
+
+            <hr style="margin-top: 15px" />
+
+            <div class="flex_container">
+              <p
+                style="
+                  font-size: 18px;
+                  color: #084c3f;
+                  font-weight: 600;
+                  margin: 0;
+                "
+              >
+                Payment Method
+              </p>
+              <p
+                style="
+                  font-size: 19px;
+                  color: #084c3f;
+                  font-weight: 600;
+                  margin: 0;
+                "
+              >
+                Card
+              </p>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Order Status -->
+        <tr>
+          <td>
+            <div>
+              <p class="normal_text">Thank you for shopping with Saleko</p>
+
+              <p class="normal_text" style="margin: 0">Sincerely,</p>
+              <p class="normal_text" style="margin: 0">Ese from Saleko</p>
+              <p class="normal_text" style="margin: 0">
+                Buy Boku, Sell Berekete
+              </p>
+            </div>
+
+            <hr style="margin-top: 60px" />
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding-top: 20px">
+            <div class="footer_flex_container">
+              <div class="saleko_logo"></div>
+
+              <div class="footer_flex_second_container">
+                <a href="" class="icon_container">
+                  <div class="instagram_ic"></div>
+                </a>
+                <a href="" class="icon_container">
+                  <div class="facebook_ic"></div>
+                </a>
+                <a href="" class="icon_container">
+                  <div class="twitter_ic"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer_flex_container spacing_style">
+              <p class="normal_text" style="color: #9a9ea6 !important">
+                © 2023 All Rights Reserved
+              </p>
+
+              <div class="footer_flex_second_container">
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >Privacy Policy</a
+                >
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >FAQs</a
+                >
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >Become a seller</a
+                >
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+  <script>
+    const productData = [
+      {
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXvFGX8_ADclqgSMV4-j4bPGfUVQN-Ipjp7l7cDbaxoqIoXc3lp552Tg&s",
+        name: "Mama pride",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+        store: "Mimi Lux Store",
+        unit: 1,
+        price: "33,000",
+      },
+      {
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXvFGX8_ADclqgSMV4-j4bPGfUVQN-Ipjp7l7cDbaxoqIoXc3lp552Tg&s",
+        name: "Mama pride",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+        store: "Mimi Lux Store",
+        unit: 1,
+        price: "33,000",
+      },
+      {
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXvFGX8_ADclqgSMV4-j4bPGfUVQN-Ipjp7l7cDbaxoqIoXc3lp552Tg&s",
+        name: "Mama pride",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+        store: "Mimi Lux Store",
+        unit: 1,
+        price: "33,000",
+      },
+    ];
+
+    const renderData = () => {
+      return productData
+        .map(
+          (product) => `
+          <tr>
+            <td>
+              <div style="display: flex; gap:10px">
+               <img src="${product.image}" style="width: 120px; height: 120px"; object-fit:'contain'/>
+               <div style="display: flex; flex-direction: column; justify-content: space-between;gap:10px;width:200px">
+                 <p style="margin: 0; font-size:25px">${product.name}</p>
+                 <p style="margin: 0; font-size:12px">${product.description}</p>
+                 <p style="margin: 0; font-size:10px; font-weight:700; color:#084C3F" >Store: ${product.store}</p>
+               </div>
+              </div>
+            </td>
+            <td style="text-align: center;font-weight:600">${product.unit}</td>
+            <td style="text-align: right;font-weight:700">N${product.price}</td>
+          </tr>
+      `
+        )
+        .join("");
+    };
+
+    const productRows = renderData();
+    document.getElementById("product_rows").innerHTML = productRows;
+  </script>
+</html>

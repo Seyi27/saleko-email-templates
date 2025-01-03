@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .saleko_logo_with_text {
+        width: 230px;
+        height: 100px;
+        background-image: url("../images/saleko_logo_with_text.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+
+      .welcome_text {
+        color: #084c3f;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0;
+        padding-top: 30px;
+      }
+
+      .normal_text {
+        color: #4b4b4b;
+        font-size: 15px;
+      }
+
+      .text_link {
+        color: #084c3f;
+        font-weight: 700;
+      }
+
+      .footer_flex_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer_flex_second_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .saleko_logo {
+        width: 200px;
+        height: 70px;
+        background-image: url("../images/saleko_logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .icon_container {
+        width: 50px;
+        height: 50px;
+        background-color: #084c3f1a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+      }
+
+      .instagram_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/instagram_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .facebook_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/facebook_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .twitter_ic {
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/twitter_ic.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .footer_flex_second_container > a {
+        color: #4b4b4b;
+        font-size: 15px;
+      }
+
+      .spacing_style {
+        margin-top: -15px;
+      }
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .saleko_logo {
+          width: 100px;
+          height: 30px;
+        }
+
+        .icon_container {
+          width: 35px;
+          height: 35px;
+        }
+
+        .instagram_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .facebook_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .twitter_ic {
+          width: 20px;
+          height: 20px;
+        }
+
+        .footer_flex_container > p {
+          font-size: 12px;
+        }
+
+        .footer_flex_second_container > a {
+          font-size: 12px;
+        }
+
+        .spacing_style {
+          margin-top: -6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 600px; margin: 0 auto; padding: 15px 10px 0 10px">
+      <table style="width: 100%;">
+        <!-- The Header -->
+        <tr>
+          <td style="text-align: center">
+            <div class="saleko_logo_with_text"></div>
+            <hr
+              style="border: 2px solid #084c3f; width: 60px; margin-top: 20px"
+            />
+
+            <p class="welcome_text">Let's Get Your Products Online!</p>
+          </td>
+        </tr>
+
+        <!-- Text Body -->
+        <tr>
+          <td>
+            <div>
+              <p class="normal_text">Dear Mimi’s Store,</p>
+
+              <p class="normal_text">
+                We followed up with you a few days ago about uploading products
+                to your Saleko store, and we wanted to check in again. We're
+                eager to help you showcase your offerings and connect with
+                potential customers on our platform.
+              </p>
+
+              <p class="normal_text" style="font-weight: 700">
+                Benefits of Selling on Saleko:
+              </p>
+
+              <ul style="margin-top: -12px">
+                <li class="normal_text">
+                  Reach a large, engaged audience: Tap into a thriving online
+                  market in Lagos, where potential customers are actively
+                  searching for products like yours.
+                </li>
+                <li class="normal_text">
+                  Boost your sales: Expand your reach beyond your physical
+                  location and capitalize on the growing online shopping trend.
+                </li>
+                <li class="normal_text">
+                  Build your brand: Create a unique online presence on Saleko's
+                  user-friendly platform and manage your inventory and pricing
+                  with ease.
+                </li>
+              </ul>
+
+              <p class="normal_text" style="font-weight: 700">
+                Let's Get You Started:
+              </p>
+
+              <p class="normal_text" style="margin-top: -15px">
+                We understand that getting started with a new platform can be
+                overwhelming. We have resources to make the process smooth:
+              </p>
+
+              <ul style="margin-top: -12px">
+                <li class="normal_text">
+                  Seller Dashboard:
+                  <a href="" class="text_link">Link to Seller Dashboard</a>-
+                  Your central hub for managing listings, orders, and customer
+                  communication.
+                </li>
+                <li class="normal_text">
+                  Adding Products to Your Saleko Store:
+                  <a href="" class="text_link">Help Center Guide</a> - A
+                  step-by-step guide with clear instructions on uploading your
+                  products.
+                </li>
+                <li class="normal_text">
+                  Need Additional Support?: Our dedicated seller support team is
+                  happy to answer any questions and assist you with the upload
+                  process. Don't hesitate to reach out!
+                  <a href="" class="text_link">Contact Us</a>
+                </li>
+              </ul>
+
+              <p class="normal_text">
+                If you’re facing any challenges, please let us know. We’re here
+                to help you every step of the way. Your success is our priority.
+              </p>
+
+              <p class="normal_text">Can't wait to see your first product!</p>
+
+              <p class="normal_text" style="margin: 0">Warmly,</p>
+
+              <p class="normal_text" style="margin: 0">The Saleko Team.</p>
+            </div>
+
+            <hr style="margin-top: 60px" />
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="padding-top: 20px">
+            <div class="footer_flex_container">
+              <div class="saleko_logo"></div>
+
+              <div class="footer_flex_second_container">
+                <a href="" class="icon_container">
+                  <div class="instagram_ic"></div>
+                </a>
+                <a href="" class="icon_container">
+                  <div class="facebook_ic"></div>
+                </a>
+                <a href="" class="icon_container">
+                  <div class="twitter_ic"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer_flex_container spacing_style">
+              <p class="normal_text" style="color: #9a9ea6 !important">
+                © 2023 All Rights Reserved
+              </p>
+
+              <div class="footer_flex_second_container">
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >Privacy Policy</a
+                >
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >FAQs</a
+                >
+                <a href="" class="normal_text" style="text-decoration: none"
+                  >Seller Guide</a
+                >
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
