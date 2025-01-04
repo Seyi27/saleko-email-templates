@@ -29,7 +29,7 @@
       .welcome_text {
         color: #084c3f;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 19px;
         margin-top: 40px;
       }
 
@@ -270,17 +270,15 @@
                 style="border: 2px solid #084c3f; width: 60px; margin-top: 20px"
               />
 
-              <p class="welcome_text">
-                Your Order is on Its Way! (Order SALNNNCC)
-              </p>
+              <p class="welcome_text">Unsuccessful Delivery Attempt!</p>
               <p class="normal_text">Hello Mimi’s Store,</p>
               <p class="normal_text">
-                We’re excited to let you know that your Saleko order is on its
-                way to you! Your purchase is now in transit and should be
-                arriving at your doorstep soon.
+                We’d like to let you know that our rider attempted to deliver
+                your order <span>SALNNNCC</span> at
+                <span>152 Abimbola Lane, Shomolu, Lagos</span> but was
+                unsuccessful.
               </p>
             </div>
-            
             <img src="../images/temp_image_3.png" class="main_body_image" />
           </td>
         </tr>
@@ -290,45 +288,38 @@
         <tr>
           <td>
             <div>
-              <p style="text-align: center; font-size: 15px">
-                2 stores, 3 items
-              </p>
-
-              <div>
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div style="display: flex; align-items: center; gap: 10px">
-                    <div class="location_ic"></div>
-
-                    <p class="normal_text">
-                      From:
-                      <a href="" class="normal_text"
-                        >Pickup Hub 1 (32 Lewis Street, Lagos Island,
-                        Nigeria.)</a
-                      >
-                    </p>
-                  </div>
-
-                  <button class="green_button">TRACK ORDER</button>
-                </div>
-
-                <div class="location_line_ic"></div>
-
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+              >
                 <div style="display: flex; align-items: center; gap: 10px">
-                  <div class="delivery_ic"></div>
+                  <div class="location_ic"></div>
 
                   <p class="normal_text">
-                    To:
-                    <a href="" class="normal_text">
-                      27, Cole Street, Fadeyi Lagos, Nigeria.</a
+                    From:
+                    <a href="" class="normal_text"
+                      >Pickup Hub 1 (32 Lewis Street, Lagos Island, Nigeria.)</a
                     >
                   </p>
                 </div>
+
+                <button class="green_button">TRACK ORDER</button>
+              </div>
+
+              <div class="location_line_ic"></div>
+
+              <div style="display: flex; align-items: center; gap: 10px">
+                <div class="delivery_ic"></div>
+
+                <p class="normal_text">
+                  To:
+                  <a href="" class="normal_text">
+                    27, Cole Street, Fadeyi Lagos, Nigeria.</a
+                  >
+                </p>
               </div>
             </div>
           </td>
@@ -428,16 +419,24 @@
         <tr>
           <td>
             <div>
-              <p class="normal_text">Thank you for shopping with Saleko</p>
+              <p class="normal_text">
+                Please note that your order will get cancelled after 2
+                unsuccessful delivery attempts.
+              </p>
 
-              <p class="normal_text" style="margin: 0">Sincerely,</p>
-              <p class="normal_text" style="margin: 0">Ese from Saleko</p>
-              <p class="normal_text" style="margin: 0">
-                Buy Boku, Sell Berekete
+              <p class="normal_text">
+                Our delivery agent will contact you on the day of our next
+                delivery attempt.
+              </p>
+              <p class="normal_text" style="padding-top: 20px;">
+                If you have any further questions please contact us at
+                <a href="" class="text_link" style="text-decoration: none"
+                  >support@saleko.ng</a
+                >
               </p>
             </div>
 
-            <hr style="margin-top: 60px" />
+            <hr style="margin-top: 50px" />
           </td>
         </tr>
 
@@ -510,7 +509,7 @@
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXvFGX8_ADclqgSMV4-j4bPGfUVQN-Ipjp7l7cDbaxoqIoXc3lp552Tg&s",
         name: "Mama pride",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
         store: "Mimi Lux Store",
         unit: 1,
         price: "33,000",
